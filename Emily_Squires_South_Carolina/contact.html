@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to South Carolina</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--NAV LINKS-->
+
+    <section id="contact-header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h3>SOUTH CAROLINA</h3></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="thingstodo.html">THINGS TO DO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="menu-btn"><img src="file:///C:/Users/emily%20dillander/AppData/Local/Temp/bc013693-b9f4-4c64-a195-b82eee3ad338_Earth%20-Images,%20colors.zip.338/Earth%20-Images,%20colors/Earth%20-%20Multipage%20Website/img/menu.svg" alt"menu"></div>
+            </nav>
+
+<!--HEADER-->
+
+            <div class="header-content">
+                <h1>CONTACT US</h1>
+            </div>
+        </div>
+    </section>
+
+<!--CONTACT FORM-->
+
+<section id="contact-us" class="container">
+    <form action="#">
+        <h1> Get In Touch</h1>
+
+        <div class="inputsWrapper">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Phone Number">
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name ="message" id""" cols="30" rows="10"></textarea>
+            <button class="primary-btn">SEND NOW</button>
+        </div>
+    </form>
+    <div class="address">
+        <h1> Talk to us</h1>
+        <div class="detailsWrapper">
+            <div class="detail">
+                <img src="email.png" alt="email">
+                <div class="text">
+                    <h6>EMAIL</h6>
+                    <p> something@example.com</p>
+                </div>
+            </div>
+            <div class="detail">
+                <img src="phone.png" alt="phone">
+                <div class="text">
+                    <h6>PHONE</h6>
+                    <p>888-888-8888</p>
+                </div>
+                <div class="detail">
+                    <img src="location.png" alt="phone">
+                    <div class="text">
+                        <h6>ADDRESS</h6>
+                        <p>2727 Ocean Road, <br>
+                            Myrtle Beach, SC 29001
+                        </p>
+                    </div>    
+        </div>
+
+        <div class="FollowUsWrapper">
+            <h3> FOLLOW US</h3>
+            <ul class="socialLinks">
+                <li> <a href=""> <img src="facebook.png" alt="facebook"></a></li>
+                <li> <a href=""> <img src="linkedin.png" alt="linkedin"></a></li>
+                <li> <a href=""3> <img src="twitter.png" alt="twitter"></a></li>
+            </ul>
+        
+        </div>
+
+    </div>
+</section>
+
+<!--FOOTER-->
+
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">THINGS TO DO</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <h1 class="logo">SOUTH CAROLINA</h1>
+        <p>@2024 Emily Squires. All rights reserved.</p>
+    </footer>
+
+    <!--SCRIPT-->
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navLinks=document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', function(){
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

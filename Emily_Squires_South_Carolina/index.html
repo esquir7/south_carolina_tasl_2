@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to South Carolina</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--NAV LINKS-->
+
+    <section id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><h3>SOUTH CAROLINA</h3></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="thingstodo.html">THINGS TO DO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <div class="menu-btn"><img src="file:///C:/Users/emily%20dillander/AppData/Local/Temp/bc013693-b9f4-4c64-a195-b82eee3ad338_Earth%20-Images,%20colors.zip.338/Earth%20-Images,%20colors/Earth%20-%20Multipage%20Website/img/menu.svg" alt"menu"></div>
+            </nav>
+
+<!--HEADER-->
+
+            <div class="header-content">
+                <h1>SOUTH CAROLINA</h1>
+                <p> known for it's mini golf, history, and beaches!</p>
+                <button class="primary-btn">LEARN MORE</button>
+            </div>
+        </div>
+
+<!--ASIDE-->
+
+        <aside>
+            <img src="South-Carolina_copy-512.webp" alt="aside">
+            <h2> SUMMARY</h2>
+            <p>South Carolina, with its capital in Columbia, is a southeastern U.S. state known for its rich history and scenic beauty.<br> Major cities include Charleston, celebrated for its historic architecture and vibrant culture, and Myrtle Beach, a popular coastal destination. Myrtle Beach features the SkyWheel, offering breathtaking views, and the Ripley's Aquarium, showcasing diverse marine life. <br>The city is also renowned as the "Mini Golf Capital of the World," boasting numerous themed miniature golf courses. South Carolina's blend of historic charm, natural attractions, and recreational activities make it a unique and appealing destination..</p>
+        </aside>
+    </section>
+
+<!--FOOTER-->
+
+    <footer>
+        <ul class="footerlinks">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">THINGS TO DO</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <h1 class="logo">SOUTH CAROLINA</h1>
+        <p>@2024 Emily Squires. All rights reserved.</p>
+    </footer>
+
+<!--SCRIPT-->
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navLinks=document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', function(){
+            navLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do in South Carolina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--NAV LINKS-->
+<section id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"><h3>SOUTH CAROLINA</h3></div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="thingstodo.html">THINGS TO DO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="menu-btn"><img src="menu.svg" alt="menu"></div>
+        </nav>
+    </div>
+</section>
+
+<!--THINGS TO DO CONTENT-->
+<section id="thingstodo" class="container">
+    <h1>Things to Do in South Carolina</h1>
+    <div class="thingstodo">
+        <img src="minigolf.png" alt="Mini Golf">
+        <h2>Mini Golf</h2>
+        <p>South Carolina is renowned for its abundant and diverse mini golf courses, particularly in the Myrtle Beach area, often referred to as the "Mini Golf Capital of the World." Visitors can enjoy a variety of themed courses, including pirate adventures, jungle escapades, and ancient ruins. These courses offer family-friendly fun with imaginative designs, challenging obstacles, and beautiful landscapes.</p>
+    </div>
+    <div class="thingstodo">
+        <img src="aquarium.jpg" alt="Aquarium">
+        <h2>Aquarium</h2>
+        <p>Ripley's Aquarium in Myrtle Beach, South Carolina, is a popular family-friendly attraction featuring a wide variety of marine life exhibits. Highlights include the Dangerous Reef, a 340-foot-long glidepath through an underwater tunnel, where visitors can see sharks, sea turtles, and stingrays up close.</p>
+    </div>
+    <div class="thingstodo">
+        <img src="skywheel.jpg" alt="SkyWheel">
+        <h2>SkyWheel</h2>
+        <p>The SkyWheel in Myrtle Beach, South Carolina, is a prominent 200-foot-tall Ferris wheel offering breathtaking panoramic views of the Atlantic Ocean and the surrounding area. Opened in 2011, it features 42 climate-controlled gondolas, providing a comfortable and scenic ride experience for visitors.</p>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <ul class="footerlinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="thingstodo.html">THINGS TO DO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <h1 class="logo">SOUTH CAROLINA</h1>
+    <p>&copy; 2024 Emily Squires. All rights reserved.</p>
+</footer>
+
+<!--SCRIPT-->
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
