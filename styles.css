@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+:root{
+    --primary-light: #AF8F6F;
+    --primary-dark: #74512D;
+    --black: #000000;
+    --white: #fff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#header{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 8px;
+}
+
+/*NAV*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 18px;
+}
+nav .logo {
+    font-size: 20px;
+}
+
+/*HEADER*/
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 60px;
+}
+.header-content h1{
+    font-size: 60px;
+    color: var(--primary-dark);
+}
+.header-content p{
+    font-size: 20px;
+    color: var(--primary-dark);
+}
+
+/*PRIMARY BTN*/
+
+.primary-btn{
+    padding: 10px 24px;
+    background: var(--primary-light);
+    color: #F8F4E1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+}
+.menu-btn{
+    position: absoulte;
+    right: 16px;
+    top: 16px;
+    background: var(--primary-light);
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none
+}
+
+/*ABOUT*/
+
+.about {
+    display: flex;
+    margin-top: 120px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about {
+    width: 300px;
+}
+.about p{
+    color: gray;
+}
+.about img {
+    max-width: 100%;
+    display: flex;
+}
+
+/*THINGS TO DO*/
+
+.thingstodo {
+    display: flex;
+    margin-top: 120px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-shadow: 4px 2px #0000;
+}
+.thingstodo {
+    width: 300px;
+}
+.thingstodo p{
+    color: var(--primary-dark);
+    text-shadow: 4px 2px #0000;
+}
+.thingstodo img {
+    max-width: 100%;
+}
+
+/*ASIDE*/
+
+#aside img{
+    display: flex;
+    width: 100px;
+    margin-top: 100px;
+}
+#aisde p {
+    display: flex;
+    margin-top: 100px;
+    color: var(--primary-dark);
+}
+
+/*CONATCT US*/
+
+#contact-us {
+    background-image: url("contact-us.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin-top: 120px;
+}
+.contact-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    gap: 16px;
+    padding: 0 16px;
+}
+.contact-us-content h1 {
+    color: var(--primary-dark);
+}
+.contact-us-content p {
+    max-width: 500px;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+footer .logo {
+    color: var(--primary-dark);
+}
+
+
+/* Contact Page */
+
+#contact-header {
+    min-height: 500px;
+    background-image: url("banner.webp");
+    background-size: cover;
+    background-position: center;
+}
+#contact-us {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    gap: 60px;
+}
+form{
+    flex-basis: 60%;
+}
+.inputsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.inputsWrapper input {
+    padding: 10px 16px;
+    width: 100%;
+    border: 1px solid var(--primary-dark);
+    outline: none;
+}
+.address {
+    flex-basis: 50%;
+}
+.detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 60px;
+}
+
+.detail img {
+    width: 40px;
+    height: 40px;
+}
+.detail h6 {
+    color: gray;
+}
+.followUsWrapper {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.socialLinks {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-top: 16px;
+}
+
+/*MEDIA*/
+@media only screen and (max-width:520px) {
+    #header {
+        min-height: 50vh;
+    }
+    .header-content h1 {
+        font-size: 32px;
+    }
+    .header-content p {
+        font-size: 24px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    nav {
+        padding: 16px;
+    }
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 80%;
+        height: 100%;
+        align-items: end;
+        padding-top: 80px;
+        margin-right: -900px;
+        transition: all 0.3s ease;
+    }
+    nav ul.active{
+        margin-right: 0;
+    }
+    nav li{
+        border-bottom: 1px solid var(--primary-dark);
+        width: 100%;
+        padding: 8px 16px;
+        text-align: right;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+    }
+    #contact-us{
+        flex-direction: column;
+    }
+    .inputsWrapper {
+        margin-left: 0;
+    }
+}

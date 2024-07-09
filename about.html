@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About South Carolina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--NAV LINKS-->
+<section id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"><h3>SOUTH CAROLINA</h3></div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="thingstodo.html">THINGS TO DO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="menu-btn"><img src="menu.svg" alt="menu"></div>
+        </nav>
+    </div>
+</section>
+
+<!--ABOUT CONTENT-->
+<section id="about" class="container">
+    <h1>About South Carolina</h1>
+    <p>South Carolina, with its capital in Columbia, is a southeastern U.S. state known for its rich history and scenic beauty.</p>
+    <p>Major cities include Charleston, celebrated for its historic architecture and vibrant culture, and Myrtle Beach, a popular coastal destination. Myrtle Beach features the SkyWheel, offering breathtaking views, and the Ripley's Aquarium, showcasing diverse marine life. The city is also renowned as the "Mini Golf Capital of the World," boasting numerous themed miniature golf courses.</p>
+    <p>South Carolina's blend of historic charm, natural attractions, and recreational activities make it a unique and appealing destination.</p>
+    
+    <div class="about">
+        <img src="columbia.png" alt="about">
+        <h3> Columbia </h3>
+        <p>Columbia, the capital city of South Carolina, has a population of approximately 136,000 residents as of the latest estimates. Incorporated in 1854, Columbia is situated in the central part of the state, within the region known as the Midlands. Classified as an urban area, it serves as a significant hub for government, education, and business. The average income level in Columbia is relatively higher compared to the rest of the state, reflecting its status as a central economic and cultural center.</p>
+    </div>
+    <div class="about">
+        <img src="charleston.png" alt="about">
+        <h3> Charleston</h3>
+        <p>Charleston, a historic and culturally rich city in South Carolina, has a population of around 150,000 residents. It was incorporated in 1783 and is situated in the southeastern region of the state along the Atlantic coast. Charleston is classified as an urban area, known for its well-preserved architecture, historic landmarks, and vibrant arts and culinary scenes. The city's economy benefits from a mix of tourism, port activities, and education, contributing to an average income level that is higher than the state average. Charleston's blend of history, culture, and economic vitality makes it a unique and attractive place to live and visit.</p>
+    </div>
+    <div class="about">
+        <img src="mrytlebeach.png" alt="about">
+        <h3> Myrtle Beach </h3>
+        <p>Myrtle Beach, a vibrant coastal city in South Carolina, has a population of approximately 35,000 residents. Incorporated in 1938, it is located in the northeastern region of the state, known as the Grand Strand. Myrtle Beach is classified as an urban area due to its thriving tourism industry and bustling economy. The city's extensive sandy beaches, entertainment options, and attractions such as the SkyWheel and numerous miniature golf courses draw millions of visitors annually. The average income level in Myrtle Beach is slightly above the state average, reflecting the significant economic impact of tourism on the local economy.</p>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <ul class="footerlinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="thingstodo.html">THINGS TO DO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <h1 class="logo">SOUTH CAROLINA</h1>
+    <p>&copy; 2024 Emily Squires. All rights reserved.</p>
+</footer>
+
+<!--SCRIPT-->
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
